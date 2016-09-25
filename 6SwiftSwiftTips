@@ -1,0 +1,81 @@
+////////////////////
+INTRO:
+Alright, so my presentation is not quite a demo, 
+it's more of a light encouragement, or nudge for 
+anyone who's either dabbled in Objective C and was hesitant to check out Swift,
+or anyone who's been daunted by Objective's C verbose syntax to actually learn iOS development.
+
+And so my goal is to show you a few ways/ (or patterns) in which using Swift can make your life a lot easier
+as compared to Objective C.
+
+////////////////////
+1. SINGLETON PATTERN
+
+The singleton pattern is not only short now, but also super simple. All it takes is 3 lines.
+
+////////////////////
+2. SORTING
+
+One thing that's always been a pain in OBJC is sorting an array. The syntax looks messy and long, and there's no way to sort in place.
+
+In Swift sorting just got SO short! 
+AND you can also sort in place. So, no need for redundant variables anymore unless you really need them!
+
+////////////////////
+3. ENUMS:
+
+So, in OBJC, enums are a pretty useful tool. They come really in handy especially for static table views. So a super simple example of this is you define your enum, and then you use it in two methods.
+First you use the enum to tell the tableview how many rows it should create. You do this by either making an extra case for the count in the enum, or you can add 1 to the last case. 
+And then in the method that creates the cells, you tell the cell to behave a certain way based on the row.
+
+So, if we wanted to display Taylor Swift's profile in a tableview we could do something like this. Pretty neat, huh?
+
+But here comes Swift. And it's huge Enum improvement. We can basically do everything in an enum. We can have variables and constants and functions... and handle all the data we need for the tableview right there. So the OBJC example from before, could look like this in Swift.
+
+////////////////////
+4. METHODS:
+
+// LENGTH
+Method names (and calls for that matter) got SO much shorter in Swift!
+
+// NAMING CLARITY
+But, you know, if you really can't let go of that OBJC syntax, you can still have the
+naming clarity you're used to.
+
+// VERSATILE PARAMS
+But one really cool thing in Swift is how many options you have for the parameters you're passing
+to a function. For example:
+
+// VARIABLE LENGTH
+You can have variable length parameters. Something you can sort of achieve with OBJC.
+
+But since you can't give a type to an NSArray, you either need to go back to plain old C and make an array of ints that way. OR, if you really want to use an NSArray, you need to be damn sure that the array only holds what your method expects.
+
+So, it either gets messy, or unsafe!
+
+// INOUT + MUTABLE/IMMUTABLE
+In OBJC you can only pass arguments by value
+even though the language still lets you think that you're manipulating
+the argument you're passing, you're actually not. A new NSString is created, but
+in Swift not only can you pass arguments by value OR reference, it
+also doesn't let you seemingly manipulate the argument.
+
+// DEFAULT
+Another cool thing you can do with Swift params is setting a default value to it, so even if you pass it null, it's still going to do SOMETHING. Just one other thing we can't do in Objective C.
+
+
+////////////////////
+5. PATTERN MATCHING:
+
+There really is no pattern matching to speak of in objective C. If you want to go through a data structure
+you just have to loop through the entire thing. NOT SO in Swift. 
+
+////////////////////
+6. FUNCTIONS
+
+It's (kind of) a functional language! 
+Which means you can make functions that return functions!
+And set them as variables, and then make variable functions.
+Which is just really cool (:
+
+

@@ -1,0 +1,15 @@
+
+****** DEMO APP ******
+
+HOW TO USE:
+
+1. Toggle between two storyboard to get different outputs
+
+    Main.storyboard will open/run the ViewController
+    Enum.storyboard will open/run the TableViewController
+
+2. To toggle between storyboards go to
+
+        DemoApp (top level) > select DemoApp Target > Deployment Info > Main Interface
+
+    and select the one you want!
